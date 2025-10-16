@@ -1,0 +1,3 @@
+/* Ensure your build process uses PostCSS with Tailwind CSS plugin for @tailwind directives */
+@import "tailwindcss"
+

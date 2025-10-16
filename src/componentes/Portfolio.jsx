@@ -3,11 +3,11 @@ function Inicio() {
         <div className="flex-col items-center space-y-6 p-6 max-w-2xl">
         <h1 className = "text-3xl font-bold text-blue-100 text-center">Hola, soy Bermys</h1>
         <p className = "text-lg text-blue-100 text-center"> 
-          Soy un estudiante de Ingenieria en Sistemas de la UNEFA, 
-          me gusta programar y aprender nuevas tecnologias.
+          Tengo 24 años y soy un estudiante de Ingenieria en Sistemas de la UNEFA Nucelo Apure, Venezuela. 
+          Me gusta programar y aprender nuevas tecnologias.
           Estoy aprendiendo React y TailwindCSS.
           Me gusta el desarrollo web y movil.
-          Espero poder aprender mucho en este curso.
+          Espero poder aprender mucho en este semestre en Lenguaje III.
         </p>
         <h2 className = "text-2xl font-bold text-blue-100 text-center">
           Mis hobbies son:

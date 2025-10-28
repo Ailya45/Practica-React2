@@ -24,11 +24,12 @@ const Portfolio = ({cambiarPagina}) => {
           <li>Programar</li>
         </ul>
         </div>
-        <div>
+        <div className='flex flex-col justify-center items-center gap-8'>
             <h2 className = "text-2xl font-bold text-blue-100 text-center">
                 ¿Deseas ponerte en contacto conmigo? Ve a la seccion de contacto.
             </h2>
-            <button className="text-blue-100 text-2xl text-center" onClick={ () => cambiarPagina('Contacto')}>Contacto</button>
+            <button className="text-blue-100 text-2xl bg-blue-950 hover:bg-blue-700 transition py-2 px-4 rounded" 
+            onClick={ () => cambiarPagina('Contacto')}>Contacto</button>
         </div>
         </div>
 

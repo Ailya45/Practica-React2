@@ -1,8 +1,14 @@
+import { FaArrowLeft } from "react-icons/fa";
+
 const Contacto = ({cambiarPagina}) => {
     return(
         <div className="flex flex-col items-center space-y-6 p-6 max-w-2xl mx-auto">
-            <div>
-            <button className="text-blue-100 text-2xl text-center" onClick={() => cambiarPagina('Portfolio')}>Volver al Portafolio</button>
+            <div className="w-full flex justify-start">
+            <button 
+            className="text-blue-100 text-2xl" 
+            onClick={() => cambiarPagina('Portfolio')}>
+            <FaArrowLeft size = {20} />  
+            </button>
             </div>
             <h1 className="text-3xl font-bold text-blue-100 text-center">Contacto</h1>
             <p className="text-lg text-blue-100 text-center">

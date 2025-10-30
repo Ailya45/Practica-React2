@@ -1,6 +1,8 @@
-import Contacto from './Contact'
+import { useNavigate } from 'react-router-dom';
 
-const Portfolio = ({cambiarPagina}) => {
+const Portfolio = () => {
+    const navigate = useNavigate();
+
     return(
         <div className="flex-col items-center space-y-6 p-6 max-w-2xl">
         <h1 className = "text-3xl font-bold text-blue-100 text-center">Hola, soy Bermys</h1>
@@ -28,11 +30,14 @@ const Portfolio = ({cambiarPagina}) => {
             <h2 className = "text-2xl font-bold text-blue-100 text-center">
                 ¿Deseas ponerte en contacto conmigo? Ve a la seccion de contacto.
             </h2>
-            <button className="text-blue-100 text-2xl bg-blue-950 hover:bg-blue-700 transition py-2 px-4 rounded" 
-            onClick={ () => cambiarPagina('Contacto')}>Contacto</button>
+            <button 
+                className="text-blue-100 text-2xl bg-blue-950 hover:bg-blue-700 transition py-2 px-4 rounded" 
+                onClick={() => navigate('/contact')}
+            >
+                Contacto
+            </button>
         </div>
         </div>
-
     )
 }
 

@@ -1,29 +1,17 @@
-import { useState } from 'react'
-import './App.css'
-import Portfolio from './componentes/Portfolio'
-import Contacto from './componentes/Contact'
-
+import { Routes, Route } from 'react-router-dom';
+import './App.css';
+import Portfolio from './pages/Portfolio';
+import Contacto from './pages/Contact';
 
 function App() {
-  const [paginaActual, setPaginaActual] = useState('Portfolio')
-
-  const renderPagina = () => {
-    if (paginaActual === 'Portfolio'){
-      return <Portfolio cambiarPagina = {setPaginaActual} />
-    }else if (paginaActual === 'Contacto'){
-      return <Contacto cambiarPagina = {setPaginaActual} />
-    }
-
-  }
   return (
-    <>
-    <div className= "flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-700 via-gray-900 to-black">
-      {renderPagina()}
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-b from-gray-700 via-gray-900 to-black">
+      <Routes>
+        <Route path="/" element={<Portfolio />} />
+        <Route path="/contact" element={<Contacto />} />
+      </Routes>
     </div>
-      
-    </>
   )
 }
-
 
 export default App

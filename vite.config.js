@@ -11,14 +11,12 @@ export default defineConfig({
     port: process.env.PORT || 3000,
 
     hmr: {
-      port: process.env.PORT // Necesario para que HMR funcione en Render
+      port: process.env.PORT 
     },
 
     host: '0.0.0.0', 
     allowedHosts: [
       'practica-react2-1.onrender.com',
-      // Opcionalmente, puedes añadir 'localhost' si quieres que funcione localmente también, 
-      // aunque generalmente localhost ya está permitido por defecto.
     ]
 
   }

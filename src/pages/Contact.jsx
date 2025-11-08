@@ -24,18 +24,21 @@ const Contacto = () => {
                     name="text"
                     placeholder="Nombre"
                     className="w-full p-2 rounded bg-gray-800 text-blue-100 border border-gray-600"
+                    required
                 />
                 <input
                     type="email"
                     name="email"
                     placeholder="Correo electrónico"
                     className="w-full p-2 rounded bg-gray-800 text-blue-100 border border-gray-600"
+                    required
                 />
                 <textarea
                     placeholder="Mensaje"
                     name="message"
                     className="w-full p-2 rounded bg-gray-800 text-blue-100 border border-gray-600"
                     rows={4}
+                    required
                 />
                 <button
                     type="submit"

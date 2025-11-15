@@ -1,7 +1,8 @@
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
-const API_URL = 'http://localhost:4173/api/interests'; 
+const RENDER_BASE_URL = 'https://api-likes-bermys.onrender.com';
+const API_URL = `${RENDER_BASE_URL}/api/interests`;
 
 const Portfolio = () => {
     const navigate = useNavigate();

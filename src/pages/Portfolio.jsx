@@ -1,5 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
+import LanguagesTable from '../LanguagesTable';
+import fotoPerfil from '../image/foto-perfil.jpg';
 
 const RENDER_BASE_URL = 'https://api-likes-bermys.onrender.com';
 const API_URL = `${RENDER_BASE_URL}/api/interests`;
@@ -75,7 +77,7 @@ const Portfolio = () => {
         
         <div className="flex flex-col items-center mx-auto p-6 max-w-2xl"> 
             
-            
+            <img className="img-circle rounded-full object-cover w-48 h-48" src={fotoPerfil} alt="foto-perfil" />
             <div className="flex-col items-center space-y-6 p-6 w-full"> 
                 <h1 className = "text-3xl font-bold text-blue-100 text-center">Hola, soy Bermys</h1>
                 <p className = "text-lg text-blue-100 text-center"> 
@@ -109,6 +111,10 @@ const Portfolio = () => {
                 >
                     {renderContent()}
                 </div>
+            </div>
+            <LanguagesTable />
+            <div>
+                
             </div>
 
             <div className='flex flex-col justify-center items-center gap-8 mt-8'>

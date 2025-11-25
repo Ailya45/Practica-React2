@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import LanguagesTable from '../LanguagesTable';
 import fotoPerfil from '../image/foto-perfil.jpg';
+import { motion } from 'motion/react';
 
 const RENDER_BASE_URL = 'https://api-likes-bermys.onrender.com';
 const API_URL = `${RENDER_BASE_URL}/api/interests`;
@@ -74,6 +75,12 @@ const Portfolio = () => {
     };
 
     return (
+
+        <motion.div
+        initial = {{opacity: 0, y: 50}}
+        animate = {{opacity: 1, y: 0}}
+        transition={{duration: 0.7, ease: 'easeInOut'}}
+        >
         
         <div className="flex flex-col items-center mx-auto p-6 max-w-2xl"> 
             
@@ -109,9 +116,11 @@ const Portfolio = () => {
                         isOpen ? 'max-h-[1000px] p-0' : 'max-h-0 p-0'
                     }`}
                 >
+                    <br />
                     {renderContent()}
                 </div>
             </div>
+            <br />
             <LanguagesTable />
             <div>
                 
@@ -129,6 +138,7 @@ const Portfolio = () => {
                 </button>
             </div>
         </div>
+        </motion.div>
     );
 }
 

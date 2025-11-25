@@ -1,10 +1,17 @@
 import { useNavigate } from "react-router-dom";
 import { FaArrowLeft } from "react-icons/fa";
+import { motion } from 'motion/react';  
 
 const Contacto = () => {
     const navigate = useNavigate();
     
     return(
+        <motion.div 
+        initial = {{opacity: 0, y: 50}}
+        animate = {{opacity: 1, y: 0}}
+        transition={{duration: 0.7, ease: 'easeInOut'}}
+        >
+
         <div className="flex flex-col items-center space-y-6 p-6 max-w-2xl mx-auto">
             <div className="w-full flex justify-start">
                 <button 
@@ -48,6 +55,7 @@ const Contacto = () => {
                 </button>
             </form>
         </div>
+        </motion.div>
     )
 }
 

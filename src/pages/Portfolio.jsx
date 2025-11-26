@@ -85,8 +85,8 @@ const Portfolio = () => {
         <div className="flex flex-col items-center mx-auto p-6 max-w-2xl"> 
             
             <img className="img-circle rounded-full object-cover w-48 h-48" src={fotoPerfil} alt="foto-perfil" />
-            <div className="flex-col items-center space-y-6 p-6 w-full"> 
-                <h1 className = "text-3xl font-bold text-blue-100 text-center">Hola, soy Bermys</h1>
+            <div className="flex-col items-start space-y-6 p-6 w-full"> 
+                <h1 className = "text-3xl font-bold text-blue-100 text-center">Bermys Santana</h1>
                 <p className = "text-lg text-blue-100 text-center"> 
                     Tengo 24 años y soy un estudiante de Ingeniería en Sistemas de la UNEFA Núcleo Apure, Venezuela. 
                     Me gusta programar y aprender nuevas tecnologías.
@@ -101,7 +101,7 @@ const Portfolio = () => {
             <div className="w-full border border-gray-300 rounded-lg overflow-hidden shadow-lg mt-4">
                 
                 <div 
-                    className="bg-blue-600 text-white p-4 cursor-pointer text-lg font-semibold flex justify-between items-center"
+                    className="bg-gray-600 text-white p-4 cursor-pointer text-lg font-semibold flex justify-between items-center"
                     onClick={toggleSlider}
                 >
                     <span>

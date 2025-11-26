@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaJs, FaPython, FaReact } from 'react-icons/fa';
-import { SiFlask, SiTailwindcss, SiHtml5 } from 'react-icons/si';
+import { FaJs, FaPython, FaReact, FaJava } from 'react-icons/fa';
+import { SiFlask, SiTailwindcss, SiHtml5, SiCplusplus } from 'react-icons/si';
 
 const LanguagesTable = () => {
   const languages = [
@@ -17,13 +17,27 @@ const LanguagesTable = () => {
       color: "bg-blue-500",
       percentage: "48%",
       icon: <FaPython className="text-2xl text-blue-500" />,
-    }
+    },
+    {
+      id: 3,
+      name: "C++",
+      color: "bg-cyan-500",
+      percentage: "89%",
+      icon: <SiCplusplus className="text-2xl text-cyan-400" />,
+    },
+    {
+      id: 4,
+      name: "Java",
+      color: "bg-cyan-500",
+      percentage: "70%",
+      icon: <FaJava className="text-2xl text-cyan-400" />,
+    },
   ];
 
   const technologies = [
     {
       id: 1,
-      name: "React + Vite",
+      name: "React",
       color: "bg-cyan-500",
       level: "Intermedio",
       icon: <FaReact className="text-2xl text-cyan-400" />,
@@ -54,7 +68,7 @@ const LanguagesTable = () => {
   return (
     <div className="space-y-8 max-w-4xl mx-auto">
       {/* Sección Lenguajes - Mismo diseño que tecnologías pero con barras */}
-      <div className="bg-zinc-800 rounded-xl shadow-2xl p-6 border border-zinc-700">
+      <div className="bg-gray-800 rounded-xl shadow-2xl p-6 border border-zinc-700">
         <div className="flex items-center gap-2 mb-6">
           <h2 className="text-2xl font-bold text-white">Lenguajes de Programación</h2>
           <span className="text-gray-400">• Uso global</span>
@@ -62,7 +76,7 @@ const LanguagesTable = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {languages.map((lang) => (
-            <div key={lang.id} className="flex flex-col p-4 rounded-lg bg-zinc-700 border border-zinc-600 hover:bg-zinc-650 transition-colors duration-200">
+            <div key={lang.id} className="flex flex-col p-4 rounded-lg bg-gray-700 border border-gray-800 hover:bg-blue-400 transition-colors duration-200">
               {/* Parte superior: Ícono y nombre */}
               <div className="flex items-center justify-between mb-3">
                 <div className="flex items-center gap-3">
@@ -92,7 +106,7 @@ const LanguagesTable = () => {
       </div>
 
       {/* Sección Tecnologías - Diseño original */}
-      <div className="bg-zinc-800 rounded-xl shadow-2xl p-6 border border-zinc-700">
+      <div className="bg-gray-800 rounded-xl shadow-2xl p-6 border border-zinc-700">
         <div className="flex items-center gap-2 mb-6">
           <h2 className="text-2xl font-bold text-white">Tecnologías y Frameworks</h2>
           <span className="text-gray-400">• Mi experiencia</span>
@@ -100,7 +114,7 @@ const LanguagesTable = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {technologies.map((tech) => (
-            <div key={tech.id} className="flex items-center justify-between p-4 rounded-lg bg-zinc-700 border border-zinc-600 hover:bg-zinc-650 transition-colors duration-200">
+            <div key={tech.id} className="flex items-center justify-between p-4 rounded-lg bg-gray-700 border border-b-gray-800 hover:bg-blue-400 transition-colors duration-200">
               <div className="flex items-center gap-3 flex-1">
                 <div className="w-12 h-12 flex items-center justify-center bg-zinc-600 rounded-lg -0">
                   {tech.icon}
